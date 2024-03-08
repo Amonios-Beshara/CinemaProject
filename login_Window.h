@@ -5,19 +5,19 @@
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
-class MainWindow;
+class login_Window;
 }
 QT_END_NAMESPACE
 
-class MainWindow : public QMainWindow
+class login_Window: public QMainWindow
 {
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
+    login_Window(QWidget *parent = nullptr);
+    ~login_Window();
 
 private:
-    Ui::MainWindow *ui;
+    Ui::login_Window *ui;
 };
 #endif // LOGIN_WINDOW_H

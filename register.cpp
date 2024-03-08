@@ -1,5 +1,6 @@
 #include "register.h"
 #include "ui_register.h"
+#include "users.h"
 
 Register::Register(QWidget *parent)
     : QDialog(parent)

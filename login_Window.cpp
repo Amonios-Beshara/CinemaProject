@@ -1,14 +1,21 @@
-#include "mainwindow.h"
-#include "ui_mainwindow.h"
+#include "login_Window.h"
+#include "ui_login_window.h"
+#include "users.h"
+#include "register.h"
 
-MainWindow::MainWindow(QWidget *parent)
+
+
+login_Window::login_Window(QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
+    , ui(new Ui::login_Window)
 {
     ui->setupUi(this);
+
+   ui->error_label->setVisible(false);
 }
 
-MainWindow::~MainWindow()
+
+login_Window::~login_Window()
 {
     delete ui;
 }
